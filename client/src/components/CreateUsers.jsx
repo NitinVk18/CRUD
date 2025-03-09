@@ -14,9 +14,9 @@ const CreateUsers = () => {
     // This code is a React (or frontend JavaScript) snippet that uses the axios library to send a POST request
     // to a backend server. It sends user data (name, email, and age) to the server and logs the response or
     // error.
-    axios.post("http://localhost:3001/createUser", { name, email, age })
-      .then((result) => console.log(result),
-        navigate('/'))
+    axios
+      .post("http://localhost:3001/createUser", { name, email, age })
+      .then((result) => console.log(result), navigate("/"))
       .catch((err) => console.log(err));
 
     // .then(...): This is a Promise handler that executes when the POST request is successful.

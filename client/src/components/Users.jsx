@@ -13,12 +13,15 @@ const Users = () => {
 
 
   return (
-    <div className="d-flex vh-100 bg-primary justify-content-center align-items-center">
-      <h1>Crud Operations</h1>
+    <>
+      <div className="d-flex vh-100 bg-primary justify-content-center align-items-center">
       <div className='50 bg-white rounded p-3 text-start'>
+      <h1>Crud Operations</h1>
+
         <Link to="/create" className='btn btn-success'>
-          Add +
+          Add a new user
         </Link>
+
         <table className="table">
           <thead>
             <tr>
@@ -44,7 +47,7 @@ const Users = () => {
                     .then(result => {console.log(result)
                        window.location.reload()})
                     .catch(err => console.log(err))
-                  }} >Delete</button>
+                  }} className="btn btn-danger">Delete</button>
                   </td>
                 </tr>
               );
@@ -53,6 +56,7 @@ const Users = () => {
         </table>
       </div>
     </div>
+    </>
   );
 };
 
