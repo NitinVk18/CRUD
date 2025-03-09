@@ -14,6 +14,7 @@ const Users = () => {
 
   return (
     <div className="d-flex vh-100 bg-primary justify-content-center align-items-center">
+      <h1>Crud Operations</h1>
       <div className='50 bg-white rounded p-3 text-start'>
         <Link to="/create" className='btn btn-success'>
           Add +
